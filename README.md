@@ -1,8 +1,10 @@
 # 📝 ToDo-app-CLI
 A very simple and lightweight ToDo app using python that can be  used from the command line
 
+
 ## 📘Description
 The ToDo CLI App is a lightweight task manager that allows users to add tasks with deadlines, view upcoming tasks, check overdue items, and delete tasks - all from the command line. It uses a plain text file for storage, making it portable, simple, and easy to run anywhere.
+
 
 ## ✨Features
 - ➕ Add tasks with deadlines and times
@@ -12,6 +14,7 @@ The ToDo CLI App is a lightweight task manager that allows users to add tasks wi
 - 💾 Persistent storage in a text file (`tasks.txt`)
 - ⚡ Fast CLI execution powered by Typer
 - 🧩 Minimal dependencies and easy to install
+
 
 ## 🛠️ Installation
 #### Prerequisites: 
@@ -37,6 +40,7 @@ The ToDo CLI App is a lightweight task manager that allows users to add tasks wi
         - pip install typer
         - pip freeze > requirements.txt
 ```
+
 
 ## ▶️ Usage
 The main entry point for the application is:
@@ -74,6 +78,7 @@ python todo_app.py delete 2
 ```
 Deletes the second task in `tasks.txt`.
 
+
 ## 📚 API Overview
 This project uses a single module:
 #### `todo_app.py`
@@ -83,3 +88,16 @@ This project uses a single module:
 - Typer `app` object → Defines CLI commands
 
 Because command logic is simple, the full CLI serves as the public API.
+
+
+## 🗂️ Project Structure
+```
+ToDo-app-CLI/
+│
+├── todo_app.py          # Main CLI script (Typer app)
+├── tasks.txt            # Auto-generated storage file
+├── README.md            # Project documentation
+├── requirements.txt     # Python dependencies
+└── ...
+```
+
