@@ -26,7 +26,7 @@ The ToDo CLI App is a lightweight task manager that allows users to add tasks wi
 
 ```bash
 1. Clone repository and navigate to the project directory:
-    - git clone https://github.com/nilesh-sengupta/ToDo-app-CLI.git
+    - git clone https://github.com/AshMax425/ToDo-app-CLI.git
     - cd ToDo-app-CLI
 
 2. Create and activate virtual environment (optional but recommended)
@@ -108,3 +108,14 @@ If you'd like to improve functionality, documentation, or testing:
 1. Fork the repository
 2. Create a feature branch
 3. Submit a Pull Request with a clear description
+
+
+## 📫 Contact
+Ashley Maxam <br>
+📧 Email: <s-ashley.maxam@lwtech.edu> <br>
+🔗 Repository: https://github.com/AshMax425/ToDo-app-CLI.git
+
+
+## 🏷️ License
+This project is originally developed by [nilesh-sengupta](https://github.com/nilesh-sengupta/ToDo-app-CLI) <br>
+Improvements and modifications in this fork are for educational and open-source contribution purposes.
