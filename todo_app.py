@@ -42,6 +42,17 @@ def add(t: str):
     file1.close()
 @app.command()
 def read():
+    """
+    Display all saved tasks and the time remaining until each deadline.
+
+    Reads tasks from ``tasks.txt``, and prints each task with an index and either
+    the time remaining or and "Ooverdue" status if the deadline has passed.
+
+    Example:
+        $ python todo_app.py read
+        1.  22/02/2025 at 17:00 Finish the report
+        Time left is: 1 day, 5:30:00
+    """
     today1 = datetime.datetime.now()
     file1=open("tasks.txt",'r')
     res=file1.readlines()
