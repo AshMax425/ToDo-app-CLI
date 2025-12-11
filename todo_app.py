@@ -1,3 +1,16 @@
+"""
+Command-line ToDo Application built with Typer.
+
+This module exposes three commands:
+
+1. add: Add a new task with a deadline.
+2. read: Read all tasks and display time remaining or overdue status.
+3. delete: Delete a task by its number in the list
+
+Tasks are stored line-by-line in ``tasks.txt`` in the format:
+    dd/mm/yyyy at HH:MM Task Description
+"""
+
 import typer
 import datetime
 from datetime import date
