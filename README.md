@@ -101,3 +101,10 @@ ToDo-app-CLI/
 └── ...
 ```
 
+
+## 🤝 Contributing
+Contributions are welcome!
+If you'd like to improve functionality, documentation, or testing:
+1. Fork the repository
+2. Create a feature branch
+3. Submit a Pull Request with a clear description
