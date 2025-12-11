@@ -37,3 +37,39 @@ The ToDo CLI App is a lightweight task manager that allows users to add tasks wi
         - pip install typer
         - pip freeze > requirements.txt
 ```
+
+## ▶️ Usage
+The main entry point for the application is:
+```
+python todo_app.py COMMAND
+```
+### 1. Add a New Task
+```
+python todo_app.py add "Finish assignment"
+```
+You will be prompted for:
+- Deadline date (`dd/mm/yyyy`)
+- Time (`HH:MM`)
+Example:
+``` 
+deadline?(dd/mm/yyy): 22/02/2025
+at?(HH:MM): 17:00
+```
+### 2. View All Tasks
+```
+python todo_app.py read
+```
+Output example:
+```
+1. 22/02/2025 at 17:00 Finish assignment
+Time left is : 1 day, 5:32:10
+```
+If a task is overdue:
+```
+Overdue
+```
+### 3. Delete a Task by Number
+```
+python todo_app.py delete 2
+```
+Deletes the second task in `tasks.txt`.
