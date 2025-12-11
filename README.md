@@ -73,3 +73,13 @@ Overdue
 python todo_app.py delete 2
 ```
 Deletes the second task in `tasks.txt`.
+
+## 📚 API Overview
+This project uses a single module:
+#### `todo_app.py`
+- `add(t: str)` → Add a task with deadline and time
+- `read()` → Display tasks and remaining time
+- `delete(num: int)` → Remove a task from storage
+- Typer `app` object → Defines CLI commands
+
+Because command logic is simple, the full CLI serves as the public API.
