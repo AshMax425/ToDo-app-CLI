@@ -1,6 +1,9 @@
-# ToDo-app-CLI
+# 📝 ToDo-app-CLI
 A very simple and lightweight ToDo app using python that can be  used from the command line
-<br>
+
+## 📘Description
+The ToDo CLI App is a lightweight task manager that allows users to add tasks with deadlines, view upcoming tasks, check overdue items, and delete tasks - all from the command line. It uses a plain text file for storage, making it portable, simple, and easy to run anywhere.
+
 1)cd into the location where the project is contained in your machine
 <br>
 2)To get list of available commands use "python todo_app.py --help"
