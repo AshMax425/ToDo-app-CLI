@@ -14,7 +14,9 @@ Tasks are stored line-by-line in ``tasks.txt`` in the format:
 import typer
 import datetime
 from datetime import date
+
 app=typer.Typer()
+
 @app.command()
 def add(t: str):
     """
@@ -40,6 +42,7 @@ def add(t: str):
     file1=open("tasks.txt",'a')
     file1.write(t)
     file1.close()
+
 @app.command()
 def read():
     """
@@ -71,6 +74,7 @@ def read():
             print("Overdue")
         else:
             print("Time left is:",lefttime)
+
 @app.command()
 def delete(num: int):
     """
@@ -93,5 +97,6 @@ def delete(num: int):
         for number, line in enumerate(lines):
             if number not in [num-1]:
                 fp.write(line)
+                
 if __name__ == "__main__":
     app()
