@@ -17,6 +17,21 @@ from datetime import date
 app=typer.Typer()
 @app.command()
 def add(t: str):
+    """
+    Add a new task with a deadline and time.
+
+    This command interactively prompts the user for a deadline date and time,
+    the appends a formatted line to ``tasks.txt``. The stored line includes
+    the date, time, and text descpription of the task.
+    
+    Args:
+        t (str): The task description to be added.
+
+    Example:
+        $ python todo_app.py add "Finish the report"
+        deadline?(dd/mm/yyyy): 22/02/2025
+        at?(HH:MM): 17:00
+    """    
     time=''
     time = typer.prompt("deadline?(dd/mm/yyyy)")
     at=''
