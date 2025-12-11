@@ -73,6 +73,19 @@ def read():
             print("Time left is:",lefttime)
 @app.command()
 def delete(num: int):
+    """
+    Delete a task by its number in the list.
+
+    Task numbers correspond to the order displayed by the ``read`` command.
+    The specified task line is removed from ``tasks.txt``.
+
+    Args:
+        num (int): The task number to delete.
+
+    Example:
+        $ python todo_app.py delete 2
+        # Deletes the second task in the list
+    """
     with open(r"tasks.txt", 'r+') as fp:
         lines = fp.readlines()
         fp.seek(0)
